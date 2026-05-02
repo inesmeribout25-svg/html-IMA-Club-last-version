@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-gold: #f59e0b;
+    --bg-dark: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --text-muted: #94a3b8;
+    --white: #ffffff;
+    --main-bg-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&q=80&w=1000');
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.95)), 
+                var(--main-bg-image) center/cover fixed;
+    color: var(--white);
+    margin: 0;
+}
+
+.navbar {
+    background: rgba(15, 23, 42, 0.98);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.2);
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: var(--primary-gold);
+}
+
+.dashboard-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7));
+}
+
+.dashboard-header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.gold-text { color: var(--primary-gold); }
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    color: var(--primary-gold);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+.stats-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.stats-list li {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.stats-list li strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--primary-gold);
+    margin-top: 10px;
+}
+
+
+.section-card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table-responsive { overflow-x: auto; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.95rem;
+}
+
+.plan-badge {
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.plan-badge.gold { background: rgba(245, 158, 11, 0.2); color: var(--primary-gold); }
+.plan-badge.silver { background: rgba(255, 255, 255, 0.1); color: #cbd5e1; }
+
+
+footer {
+    text-align: center;
+    padding: 40px;
+    margin-top: 40px;
+    background: rgba(15, 23, 42, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer p { color: var(--text-muted); font-size: 0.85rem; }
+footer::after {
+    content: "Pushing Boundaries Since 2026";
+    display: block;
+    margin-top: 10px;
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+    color: #475569;
+}
+@media (max-width: 768px) {
+    .dashboard-wrapper { flex-direction: column; }
+    aside { width: 100%; padding: 10px 0; }
+    aside nav ul { display: flex; overflow-x: auto; }
+    aside nav ul li a { padding: 10px 20px; white-space: nowrap; }
+}
+.checkbtn {
+  display: none;
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  .navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #0a0e14; 
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  .navbar ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+}
+

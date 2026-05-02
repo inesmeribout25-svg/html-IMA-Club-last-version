@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Plans | IMA Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-admin-plans.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-plans.html" class="active">Plans</a></li>
+            <li><a href="admin-login.html">Login</a></li>
+        </ul>
+    </nav>
+    <header class="admin-header">
+        <h1>Plan <span class="gold-text">Management</span></h1>
+    </header>
+    <div class="admin-container">
+        <main class="admin-content">            
+            <section class="table-section">
+                <div class="section-card">
+                    <h2>Existing Plans</h2>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                 <th>Plan Name</th>
+                                    <th>Price</th>
+                                    <th>Duration</th>
+                                    <th>Features</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>                                    <td><span class="plan-badge bronze-bg">Bronze</span></td>
+                                  <td>3000 DA</td>
+                                    <td>1 Month</td>
+                                    <td>Gym Only</td>
+                                    <td class="actions">
+                                        <button class="btn-edit">Edit</button>
+                                        <button class="btn-delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="plan-badge silver-bg">Silver</span></td>
+                                    <td>8000 DA</td>
+                                    <td>3 Months</td>
+                                    <td>Gym + Classes</td>
+                                    <td class="actions">
+                                        <button class="btn-edit">Edit</button>
+                                        <button class="btn-delete">Delete</button>
+                                    </td>
+                                </tr>
+                                <tr>                                  <td><span class="plan-badge gold-bg">Gold</span></td>                                  <td>12000 DA</td>
+                                    <td>12 Months</td>
+                                    <td>All Services</td>
+                                    <td class="actions">                                    <button class="btn-edit">Edit</button>
+                                        <button class="btn-delete">Delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <section class="form-section">
+                <div class="section-card">
+                    <h2>Add New Plan</h2>
+                    <form class="admin-form">
+                        <div class="form-grid">
+                            <div class="input-group">
+                              <label>Plan Name</label>
+                                <input type="text" placeholder="e.g. Platinum" required>
+                                </div>
+                            <div class="input-group">
+                                <label>Price (DA)</label>
+                                <input type="number" placeholder="0.00" required>
+                            </div>
+                            <div class="input-group">                              <label>Duration</label>
+                                <input type="text" placeholder="e.g. 6 Months" required>
+                            </div>
+                            <div class="input-group full-width">                              <label>Description / Features</label>
+                                <textarea rows="4" placeholder="List the features included (one per line)..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-add">Confirm & Add Plan</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="footer-bottom">
+        <p>&copy; 2026 <strong>IMA Club</strong>. Excellence in Athletics.</p>
+    </footer>
+</body>
+</html>

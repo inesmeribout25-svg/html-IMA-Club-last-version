@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-member.css">
+    <title>Membership | IMA Club</title>
+</head>
+<body>
+    <nav class="navbar">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">☰</label>
+
+  <ul>
+    <li><a href="inddex.html">Home</a></li>
+    <li><a href="classes.html">Classes</a></li>
+    <li><a href="member.html"  class="active">Membership</a></li>
+    <li><a href="trainer.html">Trainers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+    <header class="membership-header">
+        <h1>MEMBERSHIP <span class="gold-text">PLANS</span></h1>
+        <div class="gold-line"></div>
+        <p>Choose the elite plan that fits your fitness journey</p>
+    </header>
+
+
+    <main class="membership-container">
+
+        <section class="plans-grid">
+            <article class="plan-card bronze">
+                <div class="plan-icon">🥉</div>
+                <h2>Bronze</h2>
+                <div class="price">3000 DA<span>/mo</span></div>
+                <dl>
+                    <div class="detail-row">
+                        <dt>Duration</dt><dd>1 Month</dd>
+                    </div>
+                    <div class="detail-row">
+                        <dt>Access</dt><dd>Gym Only</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="plan-card silver">
+                <div class="plan-icon">🥈</div>
+                <h2>Silver</h2>
+                <div class="price">7500 DA<span>/3mo</span></div>
+                <dl>
+                    <div class="detail-row">
+                        <dt>Duration</dt><dd>3 Months</dd>
+                    </div>
+                    <div class="detail-row">
+                        <dt>Access</dt><dd>Gym + Classes</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="plan-card gold">
+                <div class="plan-icon">🥇</div>
+                <h2>Gold</h2>
+                <div class="price">25000 DA<span>/year</span></div>
+                <dl>
+                    <div class="detail-row">
+                        <dt>Duration</dt><dd>12 Months</dd>
+                    </div>
+                    <div class="detail-row">
+                        <dt>Access</dt><dd>All Services</dd>
+                    </div>
+                </dl>
+            </article>
+        </section>
+        <section class="registration-section">
+            <div class="form-header">
+                <h2>REGISTER <span class="gold-text">NOW</span></h2>
+                <p>Fill in your details to join the elite</p>
+            </div>
+
+            <form class="membership-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="input-grid">
+                        <div class="field">
+                            <label>Full Name</label>
+                            <input type="text" name="fullname" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="field">
+                            <label>Phone</label>
+                            <input type="tel" name="phone" placeholder="0550 00 00 00" required>
+                        </div>
+                        <div class="field">
+                            <label>Date Of Birth</label>
+                            <input type="date" name="dob" required>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="plan-selection">
+                    <legend>Select Your Plan</legend>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="plan" value="bronze" checked>
+                            <span class="custom-radio">Bronze</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="plan" value="silver">
+                            <span class="custom-radio">Silver</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="plan" value="gold">
+                            <span class="custom-radio">Gold</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="terms-area">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required> 
+                        <span>I accept the <a href="#">terms and conditions</a> of IMA Club</span>
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 <strong>IMA Club</strong>. Excellence in Athletics.</p>
+    </footer>
+
+</body>
+</html>
+

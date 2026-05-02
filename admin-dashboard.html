@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | IMA Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-admin-dashboard.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="admin-dashboard.html" class="active">Dashboard</a></li>
+            <li><a href="admin-plans.html">Plans</a></li>
+            <li><a href="admin-login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="dashboard-header">
+        <h1>Admin <span class="gold-text">Dashboard</span></h1>
+    </header>
+
+    <main class="dashboard-container">
+        <section>
+            <h2 class="section-title">Club Overview</h2>
+            <ul class="stats-list">
+                <li>
+                    Total Members
+                    <strong id="totalMembers">0</strong>
+                </li>
+                <li>
+                    Active Plans
+                    <strong id="activePlans">0</strong>
+                </li>
+                <li>
+                    Classes Today
+                    <strong id="classesToday">0</strong>
+                </li>
+                <li>
+                    Revenue (Monthly)
+                    <strong id="revenue">0<strong>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-card">
+            <h2 class="section-title">Recent Registrations</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member Name</th>
+                    <th>Registration Date</th>
+                            <th>Selected Plan</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ali Mansouri</td>
+                            <td>2026-02-20</td>
+                            <td><span class="plan-badge gold">Gold</span></td>
+                            <td>Active</td>
+                        </tr>
+                        <tr>
+                            <td>Maya Ben</td>
+                          <td>2026-02-21</td>
+                            <td><span class="plan-badge silver">Silver</span></td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-bottom">
+        <p>&copy; 2026 <strong>IMA Club</strong>. Excellence in Athletics.</p>
+    </footer>
+    <script src="script-dashboard.js"></script>
+
+</body>
+</html>

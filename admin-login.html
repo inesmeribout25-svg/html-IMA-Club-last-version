@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | IMA Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-admin-login.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="admin-dashboard.html">Dashboard</a></li>
+            <li><a href="admin-plans.html">Plans</a></li>
+            <li><a href="admin-login.html" class="active">Login</a></li>
+        </ul>
+    </nav>
+    <div class="login-container">
+        <header class="login-header">
+            <h1>ADMIN <span class="gold-text">LOGIN</span></h1>
+        </header>
+        <div class="login-card">
+            <h2>Sign In</h2>   
+            <form class="login-form" method="POST" action="admin-dashboard.html">
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" name="username" placeholder="Enter username" required>
+                </div>     
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="••••••••" required>
+                </div>    
+                <button type="submit" class="login-btn">Enter Dashboard</button>
+            </form>
+            <a href="inddex.html" class="back-link">← Back to main website</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2026 <strong>IMA Club</strong>. Excellence in Athletics.</p>
+    </footer>
+</body>
+</html>
