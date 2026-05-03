@@ -6,6 +6,7 @@
     <title>Our Trainers | IMA Club</title>
 
     <link rel="stylesheet" href="style-trainer.css">
+ 
 </head>
 <body>
     <nav class="navbar">
@@ -26,87 +27,15 @@
         <div class="gold-line"></div>
         <p>Meet the professionals dedicated to transforming your strength, endurance, and mindset.</p>
     </header>
-
-
     <main>
-        <section class="trainers-grid">
-            
-            <article class="trainer-card">
-                <figure>
-                    <img src="kayla.png.jpg" alt="Kayla Itsines" onerror="this.src='https://via.placeholder.com/400x500?text=Kayla'">
-                    <figcaption>Kayla Itsines</figcaption>
-                </figure>
-                <div class="trainer-info">
-                    <p>Australian personal trainer, founder of Bikini Body Guides (BBG). Expert in women's fat loss and body shaping.</p>
-                    <a href="https://www.instagram.com/kayla_itsines" target="_blank" class="insta-btn">View Profile</a>
-                </div>
-            </article>
+        <input type="text" id="trainerSearch" placeholder="Search trainer...">
 
-            <article class="trainer-card">
-                <figure>
-                    <img src="roup.png.jpg" alt="Megan Roup" onerror="this.src='https://via.placeholder.com/400x500?text=Megan'">
-                    <figcaption>Megan Roup</figcaption>
-                </figure>
-                <div class="trainer-info">
-                    <p>Founder of The Sculpt Society. Blends dance-cardio and sculpting to empower movement and confidence.</p>
-                    <a href="https://www.instagram.com/meganroup" target="_blank" class="insta-btn">View Profile</a>
-                </div>
-            </article>
+<p id="noResults" class="no-results" style="display:none;">
+    No trainers found
+</p>
+<section class="trainers-grid" id="trainers-container">
+</section>
 
-            <article class="trainer-card">
-                <figure>
-                    <img src="joe.png.jpg" alt="Joe Wicks" onerror="this.src='https://via.placeholder.com/400x500?text=Joe'">
-                    <figcaption>Joe Wicks</figcaption>
-                </figure>
-                <div class="trainer-info">
-                    <p>Known as The Body Coach. Global reputation for HIIT workouts and creator of quick fitness programs.</p>
-                    <a href="https://www.instagram.com/thebodycoach" target="_blank" class="insta-btn">View Profile</a>
-                </div>
-            </article>
-
-            <article class="trainer-card">
-                <figure>
-                    <img src="Freddy.png.jpg" alt="Freddy Rodriguez" onerror="this.src='https://via.placeholder.com/400x500?text=Freddy'">
-                    <figcaption>Freddy Rodriguez</figcaption>
-                </figure>
-                <div class="trainer-info">
-                    <p>Professional boxing trainer (Coach Anthony). Specialized in technique and fight preparation for champions.</p>
-                    <a href="https://www.instagram.com/coachanthony" target="_blank" class="insta-btn">View Profile</a>
-                </div>
-            </article>
-
-            <article class="trainer-card">
-                <figure>
-                    <img src="chad.png.jpg" alt="Chad Wesley Smith" onerror="this.src='https://via.placeholder.com/400x500?text=Chad'">
-                    <figcaption>Chad Wesley Smith</figcaption>
-                </figure>
-                <div class="trainer-info">
-                    <p>Founder of Juggernaut Method. Strength coach for power athletes with world records in squatting.</p>
-                    <a href="https://www.instagram.com/chadwesleysmith" target="_blank" class="insta-btn">View Profile</a>
-                </div>
-            </article>
-<article class="trainer-card">
-                <figure>
-                    <img src="Courteney.png.jpg" alt="Courteney Fisher" onerror="this.src='https://via.placeholder.com/400x500?text=Courteney'">
-                    <figcaption>Courteney Fisher</figcaption>
-                </figure>
-                <div class="trainer-info">
-                    <p>Creator of the Strength X Pilates method. Focused on tone, muscle strength, and postural improvement.</p>
-                    <a href="https://www.instagram.com/justtcocoo" target="_blank" class="insta-btn">View Profile</a>
-                </div>
-            </article>
-            <article class="trainer-card">
-            <figure>
-                <img src="adr.png.jpg" alt="Adriene Mishler" onerror="this.src='https://via.placeholder.com/400x500?text=Adriene'">
-                <figcaption>Adriene Mishler - Yoga Coach</figcaption>
-            </figure>
-            <div class="trainer-info">
-                <p>Founder of Yoga With Adriene. Renowned globally for making yoga accessible to everyone through her massive community and challenges.</p>
-                <a href="https://www.instagram.com/adrienelouise" target="_blank" class="insta-btn">View Profile</a>
-            </div>
-        </article>
-
-        </section>
         <section class="join-mini-section">
             <div class="join-text">
                 <h2>Want to join the squad?</h2>
@@ -116,6 +45,20 @@
         </section>
     </main>
     <footer><p>&copy; 2026 IMA Club. Excellence in Athletics.</p></footer>
+    <div id="trainerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <img id="modalImg" src="">
+    <h2 id="modalName"></h2>
+    <h4 id="modalSpecialty"></h4>
+    <p id="modalBio"></p>
+    <p id="modalSchedule"></p>
+<a id="modalInsta" target="_blank" class="insta-btn">📸 </a>
+  
+  </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
 
